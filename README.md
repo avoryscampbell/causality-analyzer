@@ -58,7 +58,17 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+## Known Issues
+Streamlit Markdown Bug
+If you receive this error in your browser console when running the Streamlit app:
 
+```
+SyntaxError: Invalid regular expression: invalid group specifier name
+```
+…it is not caused by your Python code. This is a client-side JavaScript rendering bug in Streamlit. It is triggered when st.markdown() or st.write() attempts to render malformed or overly complex Markdown (e.g., unescaped parentheses or math symbols).
+
+Fix:
+Simplify or escape special characters in Markdown blocks. You may also use st.write() as an alternative to reduce formatting conflicts with your browser’s rendering engine.
 ---
 
 ## Future Enhancements
