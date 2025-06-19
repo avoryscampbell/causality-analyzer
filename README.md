@@ -82,4 +82,3 @@ SyntaxError: Invalid regular expression: invalid group specifier name
 ## About the Author
 
 Developed by Avory Campbell, B.A. Candidate in Computer Science at Columbia University, with academic focus in scientific computing, machine learning, and quantitative systems. This project reflects an intersection of statistical modeling, financial engineering, and software systems design.
-Market Signal Causality Analyzer
