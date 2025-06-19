@@ -38,6 +38,7 @@ This suggests that prior movements in AAPL stock prices may anticipate shifts in
 * Automates data ingestion using `yfinance`
 * Applies multi-lag Granger causality testing for directionality
 * Outputs clean heatmaps for fast visual evaluation
+* Interactive browser app via Streamlit interface
 * Extensible design for equities, crypto, FX, or macro data
 
 ---
@@ -62,11 +63,11 @@ python main.py
 
 ## Future Enhancements
 
-* Add the ability to track how causality changes over time using rolling windows
-* Support for advanced time series modeling (e.g., Vector AutoRegression)
-* Build an interactive dashboard with Streamlit for selecting tickers and visualizing results
-* Enable users to upload their own CSV files or custom datasets
-* Optimize performance for large-scale analysis with lightweight database tools like DuckDB
+* Track changes in causality over time using rolling windows
+* Integrate more advanced models like Vector AutoRegression (VAR)
+* Support CSV upload and user-defined datasets
+* Provide downloadable reports and plots
+* Add model interpretability tools and feature importance insights
 
 ---
 
