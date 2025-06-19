@@ -8,22 +8,23 @@ Generates annotated heatmaps that illustrate Granger p-values across lags and ti
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
+import numpy as np
 
-def plot_causality_heatmap(p_values, title="Granger Causality Heatmap"):
+def plot_causality_heatmap(p_values, title="Granger Causality Heatmap", use_streamlit=False):
     """
-    Plot a simple heatmap of p-values for each lag.
+    Plot a heatmap of p-values from Granger causality testing.
 
     Parameters:
-        p_values (dict): Dictionary of {lag: p-value}
-        title (str): Title for the heatmap
+        p_values (dict): Mapping of lag → p-value
+        title (str): Plot title
+        use_streamlit (bool): Use Streamlit display if True; otherwise use plt.show()
     """
     lags = list(p_values.keys())
     values = list(p_values.values())
 
     fig, ax = plt.subplots()
     sns.heatmap(
-        [values],
+        np.array([values]),
         annot=True,
         fmt=".3f",
         xticklabels=lags,
@@ -34,5 +35,11 @@ def plot_causality_heatmap(p_values, title="Granger Causality Heatmap"):
     )
     ax.set_title(title)
     ax.set_xlabel("Lag")
-    st.pyplot(fig)
+
+    if use_streamlit:
+        import streamlit as st
+        st.pyplot(fig)
+    else:
+        plt.tight_layout()
+        plt.show()
 

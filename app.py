@@ -31,7 +31,7 @@ if st.button("Run Causality Analysis"):
         else:
             p_values = run_granger(df1['Close'], df2['Close'], max_lag)
             st.success("Analysis complete. Plotting results...")
-            plot_causality_heatmap(p_values, title=f"{ticker_1} → {ticker_2} Granger Causality")
+            plot_causality_heatmap(p_values, title=f"{ticker_1} → {ticker_2}", use_streamlit=True)
     except Exception as e:
         st.error(f"Error: {e}")
 
