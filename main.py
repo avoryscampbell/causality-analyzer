@@ -10,7 +10,7 @@ from typing import Dict
 from backend.utils import fetch_data
 from backend.causality_engine import run_granger
 
-# Plotting is optional; this will safely skip if missing or incompatible
+
 try:
     from backend.visualize import plot_pvalues_by_lag
     HAVE_PLOTTER = True
@@ -31,10 +31,10 @@ def analyze_pair(ticker_x: str, ticker_y: str, start: str, end: str, max_lag: in
     if df.empty:
         raise ValueError(f"No overlapping data for {ticker_x} and {ticker_y} in {start}..{end}")
 
-    # 2) Run Granger: does X cause Y?
+    # 2) Run Granger
     result: Dict = run_granger(df["x"], df["y"], max_lag=max_lag)
 
-    # 3) Pretty print
+    # 3)
     print(f"\n=== {ticker_x} → {ticker_y} (max_lag={max_lag}) ===")
     pmap = result.get("p_values_by_lag", {})
     if pmap:
