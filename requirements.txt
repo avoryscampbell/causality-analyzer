@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+yfinance
+pandas
+numpy
+statsmodels
+scipy
+plotly
+matplotlib
+seaborn
+streamlit
