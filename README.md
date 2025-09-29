@@ -1,14 +1,15 @@
-```markdown
+```
+```
 # Market Signal Causality Analyzer
 
 ** A quant-ready toolkit that transforms raw financial time series into causal insights, trading signals, and interactive visualizations. **
 
 Quant-ready toolkit for discovering directional, predictive relationships between financial time series and turning them into actionable insights.  
 Implements Granger causality (VAR/VECM), robust diagnostics, and interactive Plotly/Streamlit visualizations—packaged with a modern React front end for a clean UX.
-
+```
 > **Author:** Avory Campbell • Columbia University, CS  
 > **Tech focus:** Causality discovery → Explainability → Actionable signals
-
+```
 ---
 
 ## Highlights
@@ -27,7 +28,7 @@ Implements Granger causality (VAR/VECM), robust diagnostics, and interactive Plo
 
 ## Repository Structure
 
-```
+```markdown
 causality-analyzer/
 ├─ backend/
 │  ├─ **init**.py
@@ -61,6 +62,8 @@ causality-analyzer/
 - **(macOS)** Xcode CLT recommended for native builds  
 
 ### 1) Python environment
+
+```
 
 ```bash
 # from repo root
