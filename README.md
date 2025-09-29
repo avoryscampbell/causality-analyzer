@@ -28,7 +28,6 @@ Implements Granger causality (VAR/VECM), robust diagnostics, and interactive Plo
 ## Repository Structure
 
 ```
-
 causality-analyzer/
 ├─ backend/
 │  ├─ **init**.py
@@ -50,7 +49,7 @@ causality-analyzer/
 ├─ .env                     # (optional) local settings / keys (never commit secrets)
 └─ README.md
 
-````
+```
 
 ---
 
