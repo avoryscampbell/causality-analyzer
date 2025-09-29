@@ -7,8 +7,10 @@
 Quant-ready toolkit for discovering directional, predictive relationships between financial time series and turning them into actionable insights.  
 Implements Granger causality (VAR/VECM), robust diagnostics, and interactive Plotly/Streamlit visualizations—packaged with a modern React front end for a clean UX.
 ```
+```
 > **Author:** Avory Campbell • Columbia University, CS  
 > **Tech focus:** Causality discovery → Explainability → Actionable signals
+```
 ```
 ---
 
@@ -196,17 +198,6 @@ Do **not** commit secrets. If any API keys are required later, keep them in `.en
 ---
 
 ## Screenshots
-
-> *Add a few images/gifs here for immediate visual impact.*
-> Examples:
-
-* `docs/streamlit-home.png`
-* `docs/pvalues-by-lag.png`
-* `docs/heatmap.png`
-
-```markdown
-![Streamlit Home](docs/streamlit-home.png)
-```
 
 ---
 
