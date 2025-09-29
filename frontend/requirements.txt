@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+statsmodels
+seaborn
+yfinance
+fastapi
+uvicorn[standard]
+
